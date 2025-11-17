@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum Santé</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <img src="https://placehold.co/1200x300?text=Photo+Médecin" alt="Médecin" class="header-img">
+    <h1>Forum Santé</h1>
+    <input type="text" id="searchInput" placeholder="Rechercher un conseil, un symptôme...">
+</header>
+
+<main>
+    <section id="authForm">
+        <h2>Créer un compte ou se connecter</h2>
+        <input type="text" id="username" placeholder="Nom d'utilisateur (ou Anonyme)" />
+        <input type="password" id="password" placeholder="Mot de passe" />
+        <button id="loginBtn">Se connecter / Créer un compte</button>
+    </section>
+
+    <section id="postForm">
+        <h2>Partager un conseil ou une expérience</h2>
+        <textarea id="message" placeholder="Votre message (pas de diagnostic médical ici)"></textarea>
+
+        <div id="doctorCert">
+            <label for="doctorFile">Téléverser votre diplôme (optionnel) :</label>
+            <input type="file" id="doctorFile">
+        </div>
+
+        <button id="postBtn">Publier</button>
+    </section>
+
+    <section id="postsContainer">
+        <h2>Discussions</h2>
+        <!-- Les posts apparaissent ici via JS -->
+    </section>
+</main>
+
+<footer>
+    <p>⚠️ Ce site ne remplace pas un avis médical professionnel. Toujours consulter un médecin certifié.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
